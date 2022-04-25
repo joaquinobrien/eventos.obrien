@@ -252,7 +252,27 @@ body{
     }
 
 
-
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px 200px 20px 200px;
+        flex-wrap: wrap;
+        border: 5px solid green;
+        background: #0a1a2a;
+        color: skyblue;
+        animation-name: desplazarse;
+        animation-duration: 5s;
+    }
+    @keyframes desplazarse {
+        from {
+            position: relative;
+            left: 100%;
+        }
+        to {
+            left: 0%;
+        }
+    }
 
 
 
