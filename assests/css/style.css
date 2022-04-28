@@ -4,33 +4,6 @@
 
 }
 
- .menu{
-    
-  margin: 5px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-
- 
-    
-}
-
-
-
-
-.menu li a{
-    color: whitesmoke;
-    font-family: 'Space Grotesk', sans-serif;
-    text-decoration: none;
-    margin: 10px;
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-
-    
-    
-
-}
 
 body{
     width: 100%;
