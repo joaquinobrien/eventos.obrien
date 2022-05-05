@@ -1,0 +1,65 @@
+.FORMULARIO{
+    color: $colorprimario;
+    font-family: $fuenteprimaria;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    .form{
+        width: 650px;
+        box-shadow: 5px 5px 15px 5px #000000;
+        padding: 20px;
+        margin: 300px;
+        margin-top: 100px;
+        border-radius: 5px;
+        
+    
+    }
+    .frase-contactos{
+        font-family: $fuenteprimaria;
+        text-align: center;
+        color: $colorprimario;
+        padding: 30px;
+        height: auto;
+        
+    }
+    @media (max-widht: 400px){}
+        .grid-container{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto 200px;
+            grid-template-areas: "header" "header"
+                                 "main" "main" 
+                                 "footer"  "footer";
+            display: flex;
+            flex-direction: column;
+        
+    
+        }
+        .navbar{
+            flex-direction: column;
+    
+        }    
+        .form {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin: 20px 200px 20px 200px;
+            flex-wrap: wrap;
+            border: 5px solid green;
+            background: #0a1a2a;
+            color: skyblue;
+            animation-name: desplazarse;
+            animation-duration: 5s;
+        }
+        @keyframes desplazarse {
+            from {
+                position: relative;
+                left: 100%;
+            }
+            to {
+                left: 0%;
+            }
+        }
+    }

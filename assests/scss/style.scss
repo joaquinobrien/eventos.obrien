@@ -1,0 +1,166 @@
+
+@import "_variables";
+@import "_formulario";
+@import "_footer";
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(/assests/img/posible\ fondo\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+
+}
+.titulo{
+    color: whitesmoke;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-left: 420px;
+    
+    width: 350px;
+    padding: 10pxx;
+    border-radius: 100px;
+    padding: 10px;
+}
+.titulo__principal{
+    text-align: center;
+    font-size: 45px;
+    text-decoration: double;
+    
+}
+.titulo__sub{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+#FOTOEVENTO{
+    height: 400px;
+    width: 60%;
+    margin-left: 250px;
+    border-radius: 15px;
+   
+}
+.contenedor{
+    margin-left: 450px;
+    display: block;
+    
+    width: 350px;
+
+}
+
+.EJEMPLO{
+    color:whitesmoke;
+    margin-left: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+
+.texto{
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+.contenedor2{
+    width: 50%;
+    display: grid;
+    grid-row: auto;
+    max-width: 1000px;
+   grid-row: auto;
+
+}
+.tarjeta{
+    width: 100%;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: aliceblue;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translate(-3%);
+    
+}
+
+.tarjeta img{
+    width: 50%;
+    height: 300px;
+  
+}
+.tarjeta .contenido2{
+    padding: 15px;
+    text-align: center;
+}
+.tarjeta .contenido2 p{
+    line-height: 1.5;
+    color: #000000;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 200px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+
+}
+.contenedor3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.header{
+    grid-area: header;
+    width: 100%;
+    color: whitesmoke;
+    font-family:$fuenteprimaria ;
+    margin-left: 420px;
+    width: 350px;
+    padding: 10pxx;
+    border-radius: 100px;
+    padding: 10px;
+    
+
+}
+
+.main{
+    grid-area: main;
+
+}
+
+
+
+.card{
+    margin: 20px;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+
+
+   
