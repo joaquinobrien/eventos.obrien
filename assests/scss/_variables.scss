@@ -1,2 +1,10 @@
-$colorprimario : whitesmoke;
-$fuenteprimaria :  'Space Grotesk', sans-serif;
+$color-primario : whitesmoke;
+$fuente-primaria :  'Space Grotesk', sans-serif;
+$color-secundario: red;
+
+
+$boton:(
+    bordes:0,
+    padding: 10px 15px,
+    radio:5px,
+)

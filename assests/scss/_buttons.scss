@@ -1,0 +1,23 @@
+@import "_variables";
+
+.botton{
+    border:map-get($boton , bordes );
+    padding: map-get($boton , padding );
+    border-radius: map-get($boton , radio );
+    background-color: $color-primario;
+    
+    
+}
+@mixin propiedadeprincipal ($bg-color,$colorletra,$ancho,$alto) {
+    background-color: $bg-color;
+    color: $colorletra;
+    width: $ancho;
+    height: $alto;
+}
+boton-primario{
+    @extend .botton;
+    @include propiedadeprincipal(red,(233,9,9),#fff,100px,auto)
+    
+    
+
+}
