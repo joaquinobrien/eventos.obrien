@@ -287,6 +287,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.frase-galeria{
+  color: whitesmoke;
+  text-align: center;
+
+}
 
 
 /*# sourceMappingURL=style.css.map */
