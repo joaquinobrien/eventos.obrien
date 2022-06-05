@@ -9,11 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../assests/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5aadf441d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">INICIO</a>
+          <a class="navbar-brand" href="../index.html">INICIO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,73 +44,95 @@
      <header>
          <h4 class="frase-contactos"> Tenemos todo para hacer que tu evento sea inolvidable. Pongámonos en contacto y empecemos a diseñarlo.</h4>
      </header>
-     <main>
-         <section>
-             <div class="form">
-        
-            <div class="FORMULARIO">
-        
-                <form action="FORMULARIO" method="get">
-
-                 <label for="nombre">ingrese su nombre</label>
-                 <input type="text" placeholder=" nombre" name="nombre">
-                    <br>
-                    <br>
-                 <label for="apellido">ingrese su apellido</label>
-                 <input type="text" placeholder="apellido" name="apellido"> 
-                    <br>
-                    <br>
-                  <label for="numero de telefono">ingrese numero de telefono</label>
-                  <input type="text" placeholder="telefono" name="telefono">
-                    <br>
-                    <br>
-                  <label for="e-mail">ingrese su e-mail </label>
-                 <input type="email" placeholder="E-mail" name="E-mail" id="eventosobrien@gmail.com">
-                     <br>
-                     <br>
-                 <label for="mensaje">consulta</label>
-                 <textarea name="mensaje" ></textarea>
-                    <br>
-                    <br>
-                 <label for="tipo de evento">Tipo de evento</label>
-                <textarea name="agregar evento" ></textarea>
-                     <br>
-                     <br>
-                <label for="fecha">FECHA</label>
-                 <form> <input type=”datetime-local” id=”fecha” name=”fecha” required=”required”  > </form>
-                    <br>
-                    <br>
-                <label for="horario">Dia</label>
-                 <input type="radio" name="horario" value="dia">
-                <label for="horario"> Noche</label>
-                 <input type="radio" name="horario" value="noche">
- 
-                 <input type="submit">
-                 <input type="reset">
+     
+     <div class="flex-container row col-xs-12 col-md-12">
+      <div class="formulario row col-xs-12 col-md-12">
+          <form action="formulario col-xs-12" method="get">
+              <label for="nombre ">tipo de evento:</label>
+              <input type="text" placeholder="Escriba aqui..." name="nombre"><br><br>
+              <label for="apellido" >Detalles del evento:</label>
+              <input type="text" placeholder="Escriba aqui..." name="nombre"><br><br>
+              <label for="nombre">Cargar ejemplos:</label>
+              <input type="file" name="imagen">
+         </form>
+     </div>
+      <div class="articulos">
+          <form action="formulario col-xs-12" method="get">
+            <div class="col-xs-12 col-md-12">
+              <label for="nombre">cantidad de gente:</label>
+            <input type="number" autocomplete="transaction-amount" placeholder="$">
+            </div><br>
+            <div class="col-xs-12 col-md-12">
+              <label for="nombre">Descripcion de tu evento :</label><br><br>
+            <p><textarea name="comentario" rows="9" cols="30">Escribi tu descripcion..</textarea></p>
             </div>
-            </div>
-        </section>
-
-    </main>
-    
-    
-
-
- </form>
- 
-
- <footer id="pieDeFooter">
-    
-    <div>
-
-        <p>copyright 2022</p>
-        
-        <a href="eventosobrien@gmail.com">eventosobrien@gmail.com</a>
-        <P>Telefono: 1141702228</P>
-        <address>Cno Real Moron 1998 1642 San Isidro Buenos Aires</address>
-        <p>mandanos cualquier consulta</p>
+            <p class="venta col-xs-12 col-md-12 ">horario:</p>
+    <div class="entrega">
+      <form action="condicion col-xs-12" method="get">
+        <label for="nombre">dia</label>
+        <input type="checkbox" name="check">
+        <label for="nombre">noche</label>
+        <input type="checkbox" name="check">
+      </form>
     </div>
- </footer>
+         </form>
+      </div>
+      <p class="textos">Para finalizar elegi una opcion de pago:</p>
+     <div class="contenido">
+         <form action="formulario col-12-xs" method="get">
+          <p class="venta">Forma de pago:</p>
+          <div class="entrega col-xs-12 col-md-12">
+              <label for="nombre col-md-4">credito</label>
+              <input type="checkbox" name="check">
+              <label for="nombre col-md-4">debito</label>
+              <input type="checkbox" name="check">
+              <label for="nombre col-md-4">otro</label>
+              <input type="checkbox" name="check">
+              <div class="bb">
+                <button class="boton">ENVIAR</button>
+              </div>
+         </form>
+     </div>
+    </div>
+    </div>
+    
+
+
+
+ 
+
+ <footer class="pie-de-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="../assests/img/logo eventos coder (2).png" alt="main-logo">
+              </a>
+          </figure>
+      </div>
+      <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Somos una empresa que se dedica a hacer tu evento soñado realidad </p>
+          <p>Estamos hace muchisimo tiempo en el mercado.</p>
+      </div>
+      <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+              <a href="https://facebook.com" class="fa fa-facebook"></a>
+              <a href="https://instagram.com" class="fa fa-instagram"></a>
+              <a href="https://twitter.com" class="fa fa-twitter"></a>
+              <a href="https://youtube.com" class="fa fa-youtube"></a>
+          </div>
+      </div>
+  </div>
+  <!--::::pie de pagina::::::-->
+  <div class="grupo-2">
+      <small>&COPY; 2022 <b>EVENTOS OBRIEN</b> - Todos los derechos reservados.</small>
+  </div>
+
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
  
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
