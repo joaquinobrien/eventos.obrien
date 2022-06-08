@@ -80,7 +80,7 @@ body {
   padding: 20px;
   margin: 20px 0px 20px 0px;
   flex-wrap: wrap;
-  border: 5px solid green;
+  border: 5px solid rgb(83, 0, 128);
   background: #0a1a2a;
   color: skyblue;
   animation-name: desplazarse;
@@ -119,7 +119,7 @@ body {
     margin: 5px;
     border-radius: 5px;
     border: solid;
-    color: #0a1a2a;
+    color: #0a0a59;
     box-shadow: 2px 4px 10px 5px; }
     .flex-container .boton:hover {
       color: #9b0f16; }
