@@ -49,3 +49,14 @@ celular1 = new fiesta("año 90's","100","salon","musica90's","alcohol");
 celular1.CrearEvento();
 celular1.Dj();
 celular1.Seguridad();
+
+let boton = document.getElementById("botonprincipal");
+boton.addEventListener("click", validar);
+
+function validar() {
+    let campo_email = document.getElementById("email").value;
+    if (campo_email == "") {
+        alert("¡falta completar email!");
+    }
+
+}
